@@ -2,14 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
 }
 
 :root {
     --main-background:#1f2937;
     --text-color: #f4f4f5;
+    --nav-background: #94a3b8;
 }
 
 body {
     background: var(--main-background);
     color: var(--text-color);
+    height: 100svh;
+    display: grid;
+    place-content: center;
+}
+
+nav {
+    background-color: var(--nav-background);
+    width: fit-content;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    gap: 2.5rem;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: solid;
+
+}
+
+ul, li {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
 }
